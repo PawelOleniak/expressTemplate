@@ -1,0 +1,9 @@
+FROM express_build
+
+RUN rm -rf -v !("node_modules"|"app.js","package.json")
+
+EXPOSE 8000
+CMD [ "npm", "start"]
+
+
+
