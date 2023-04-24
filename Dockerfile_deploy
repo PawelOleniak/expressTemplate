@@ -1,6 +1,7 @@
 FROM express_build
 
-RUN rm -rf -v !("node_modules"|"app.js"|"package.json") ./
+RUN rm package-lock.json ./build/app.min.js Dockerfile_deploy Dockerfile_test Dockerfile_build Gruntfile.js
+
 
 EXPOSE 8000
 CMD [ "npm", "start"]
