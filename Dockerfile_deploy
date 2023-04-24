@@ -1,6 +1,6 @@
 FROM express_build
 
-RUN rm package-lock.json ./build/app.min.js Dockerfile_deploy Dockerfile_test Dockerfile_build Gruntfile.js
+RUN rm package-lock.json Dockerfile_deploy Dockerfile_test Dockerfile_build Gruntfile.js
 
 
 EXPOSE 8000
