@@ -1,5 +1,6 @@
-FROM express_clone
+FROM node
 
+RUN git clone https://github.com/PawelOleniak/expressTemplate.git app
 WORKDIR app
 
 RUN npm install

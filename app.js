@@ -1,2 +1,0 @@
-/*! docker_web_app 2023-05-07 */
-"use strict";const express=require("express"),PORT=8e3,HOST="0.0.0.0",app=express();app.get("/",(e,s)=>{s.send("Hello World")}),app.listen(PORT,HOST,()=>{console.log(`Running on http://${HOST}:`+PORT)});
