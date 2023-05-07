@@ -1,7 +1,6 @@
 FROM express_build
 
-RUN rm -f package-lock.json Dockerfile_test Dockerfile_build Gruntfile.js
-
+RUN rm -f package-lock.json Dockerfile_test Dockerfile_clone Dockerfile_deploy Dockerfile_build Gruntfile.js
 
 EXPOSE 8000
 CMD [ "npm", "start"]
